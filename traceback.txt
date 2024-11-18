@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 8, in script
+    show dmitriy at desk
+  File "game/script.rpy", line 8, in <module>
+    show dmitriy at desk
+NameError: name 'desk' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 8, in script
+    show dmitriy at desk
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 1070, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 1070, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 8, in <module>
+    show dmitriy at desk
+NameError: name 'desk' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.3.24111502
+Vusual Novel 1.0
+Mon Nov 18 19:30:09 2024
