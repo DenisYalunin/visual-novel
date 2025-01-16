@@ -1,32 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 8, in script
-    show dmitriy at desk
-  File "game/script.rpy", line 8, in <module>
-    show dmitriy at desk
-NameError: name 'desk' is not defined
+  File "game/script.rpy", line 15, in script
+    scene bg_dmitriys_room with zoom_fullscreen
+TypeError: got an unexpected keyword argument 'old_widget'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 8, in script
-    show dmitriy at desk
-  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 1111, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 1070, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 1070, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\Admin\Desktop\Ren'Py\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Admin\Desktop\Ren'Py\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 8, in <module>
-    show dmitriy at desk
-NameError: name 'desk' is not defined
+  File "game/script.rpy", line 15, in script
+    scene bg_dmitriys_room with zoom_fullscreen
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 1367, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\display\core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\display\core.py", line 2666, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\display\core.py", line 2575, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\atl.py", line 623, in __call__
+    new_scope = signature.apply(args, kwargs, partial=True, apply_defaults=False)
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\parameter.py", line 384, in apply
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'old_widget'
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.3.3.24111502
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.4.24120703
 Vusual Novel 1.0
-Mon Nov 18 19:30:09 2024
+Thu Jan 16 19:37:05 2025
