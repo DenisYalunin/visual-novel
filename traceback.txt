@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 191, in script
-    dmitriy "Ну что же, вот этот самый инженер, сделавший такое технологическое чудо. Однако, есть у меня к нему пара вопросов касаемо его детища. Возможно, даже предложений."
+  File "game/script.rpy", line 282, in script
+    dmitriy "Итак, господа, дела ваши плохи, скажу прямо. Система вас еще терпит, но если все будет продолжаться, то такими темпами уже скоро вы будете отчислены."
 Exception: Sayer 'dmitriy' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 191, in script
-    dmitriy "Ну что же, вот этот самый инженер, сделавший такое технологическое чудо. Однако, есть у меня к нему пара вопросов касаемо его детища. Возможно, даже предложений."
-  File "C:\Users\Admin\Desktop\RenPy\renpy\ast.py", line 2579, in execute
+  File "game/script.rpy", line 282, in script
+    dmitriy "Итак, господа, дела ваши плохи, скажу прямо. Система вас еще терпит, но если все будет продолжаться, то такими темпами уже скоро вы будете отчислены."
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 2579, in execute
     Say.execute(self)
-  File "C:\Users\Admin\Desktop\RenPy\renpy\ast.py", line 581, in execute
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 581, in execute
     who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Admin\Desktop\RenPy\renpy\ast.py", line 470, in eval_who
+  File "C:\Users\Admin\Desktop\Ren'Py\renpy\ast.py", line 470, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
 Exception: Sayer 'dmitriy' is not defined.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Vusual Novel 1.0
-Fri Jan 17 21:17:06 2025
+Sun Jan 19 19:48:24 2025
