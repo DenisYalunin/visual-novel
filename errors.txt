@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 185: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    use zoom_fullscreen
-                       ^
+File "game/script.rpy", line 207: end of line expected.
+    jump scene end
+               ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Jan 17 21:27:41 2025
+Tue Jan 21 09:42:03 2025
